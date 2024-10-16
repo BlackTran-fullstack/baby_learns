@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./public/css/tailwind.css" />
+        <title>Bé tập tính</title>
+    </head>
+    <body>
+        <div
+            class="content max-w-[500px] p-[10px] border-[3px] border-cyan-400 rounded-md mt-[50px] mx-auto"
+        >
+            <p class="text-[20px] font-bold text-center">Bé tập tính</p>
+            <form class="flex justify-evenly mt-[20px]">
+                <div class="w-[300px]">
+                    <!-- Số thứ nhất -->
+                    <div class="flex justify-between">
+                        <label class="text-18px font-bold" for="number1"
+                            >Số thứ nhất</label
+                        >
+                        <input
+                            class="border-[2px] border-black rounded-md outline-none focus:border-blue-600"
+                            type="number"
+                            id="number1"
+                            name="number1"
+                        />
+                    </div>
+
+                    <!-- Số thứ hai -->
+                    <div class="flex justify-between mt-[10px]">
+                        <label class="text-18px font-bold" for="number2"
+                            >Số thứ hai</label
+                        >
+                        <input
+                            class="border-[2px] border-black rounded-md outline-none focus:border-blue-600"
+                            type="number"
+                            id="number2"
+                            name="number2"
+                        />
+                    </div>
+
+                    <!-- Kết quả -->
+                    <div class="flex justify-between mt-[10px]">
+                        <label class="text-18px font-bold" for="result"
+                            >Kết quả</label
+                        >
+                        <input
+                            class="border-[2px] border-black rounded-md outline-none focus:border-blue-600"
+                            type="text"
+                            id="result"
+                            name="result"
+                            readonly
+                        />
+                    </div>
+                </div>
+
+                <div>
+                    <div class="flex">
+                        <div>
+                            <input
+                                type="radio"
+                                id="add"
+                                name="operator"
+                                value="add"
+                            />
+                            <label for="add">Cộng</label>
+                        </div>
+
+                        <div class="ml-[10px]">
+                            <input
+                                type="radio"
+                                id="sub"
+                                name="operator"
+                                value="sub"
+                            />
+                            <label for="sub">Trừ</label>
+                        </div>
+                    </div>
+
+                    <div class="flex">
+                        <div class="mt-[10px]">
+                            <input
+                                type="radio"
+                                id="mul"
+                                name="operator"
+                                value="mul"
+                            />
+                            <label for="mul">Nhân</label>
+                        </div>
+
+                        <div class="m-[10px]">
+                            <input
+                                type="radio"
+                                id="div"
+                                name="operator"
+                                value="div"
+                            />
+                            <label for="div">Chia</label>
+                        </div>
+                    </div>
+
+                    <input
+                        class="w-[110px] mt-[5px] mx-auto bg-blue-500 text-white rounded-md p-[5px] cursor-pointer"
+                        type="submit"
+                        name="submit"
+                        value="Tính"
+                    />
+                </div>
+            </form>
+        </div>
+        <script src="./public/js/myscript.js"></script>
+    </body>
+</html>
